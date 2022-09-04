@@ -55,7 +55,9 @@ body {
 
     /* HEADER & NAV */
 
-
+    .hide{
+        display:none;
+    }
 
     .container {
         padding: 3.2rem 1.6rem;
