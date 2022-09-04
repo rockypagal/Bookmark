@@ -1,0 +1,1504 @@
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    /* font-family: 'Rubik', sans-serif; */
+    /* font-family: 'DM Sans', sans-serif; */
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+
+.scrollTOTop{
+    position: fixed;
+    width:4rem;
+    height:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:-5rem;
+    right:5rem;
+    background-color: #5368df;
+    z-index: 10;
+    border-radius:2.5rem;
+    transition: all ease .3s;
+    color:white;
+}
+.scrollup .scrollTOTop{
+    top:90rem;
+
+}
+
+
+.content2 {
+    display: none;
+}
+
+.capsule {
+    background-color: none;
+}
+
+@media screen and (max-width:768px) {
+
+    /* HEADER & NAV */
+
+
+
+    .container {
+        padding: 3.2rem 1.6rem;
+    }
+
+    .nav {}
+
+    .navCenter {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nc {
+        padding: 3.2rem 1.6rem;
+        color: white;
+    }
+
+    .fa-bars {
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    .linksContainer {
+        background-color: rgba(37, 43, 70, .87);
+        text-align: center;
+        position: fixed;
+        left: 0;
+        transform: translateY();
+        top: -85rem;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+        opacity: 0;
+        z-index: 3;
+        transition: all ease .5s;
+    }
+
+
+
+    .linksContainer a {
+        font-size: 2rem;
+        display: block;
+        color: white;
+        padding: 3rem;
+    }
+
+    .linksContainer img {
+        width: 14.8rem;
+    }
+
+    .linksContainer li:first-child {
+        padding-top: 5rem;
+    }
+
+    .linksContainer li:last-child {
+        border: 1px solid white;
+        width: 25rem;
+        margin: auto;
+        border-radius: .5rem;
+        margin-top: 3rem;
+        padding: 0rem;
+    }
+
+    #last {
+        padding: 1rem;
+    }
+
+    /* HEADER & NAV CLOSING*/
+
+
+    /* JS EDITING */
+
+    .show .linksContainer {
+        top: 0;
+        opacity: 1;
+        display: block;
+        transition: all ease .5s;
+    }
+
+    .show .fa-bars {
+        opacity: 0;
+    }
+
+
+
+    /* HERO PAGE STYLE */
+
+    .content {
+        display: none;
+    }
+
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .simpleHeading h1 {
+        font-size: 4.5rem;
+        width: 20rem;
+        font-weight: 500;
+        text-align: center;
+        margin: auto;
+        line-height: 4.4rem;
+        color: #252b46;
+    }
+
+    p {
+        font-size: 1.84rem;
+        line-height: 2.3rem;
+        text-align: center;
+        color: #9194a1;
+
+    }
+
+    .simpleHeading p {
+        font-size: 1.84rem;
+        line-height: 2.3rem;
+        text-align: center;
+        color: #9194a1;
+        margin: 2.5rem auto;
+    }
+
+
+
+    .tab {
+
+        display: block;
+        width: 100%;
+        margin-bottom: 3.5rem;
+    }
+
+    .btn {
+        margin: auto;
+    }
+
+    .chromeLink,
+    .foxLink {
+        /* background-color: hsl(231, 69%, 60%); */
+        background-color: #5368df;
+        height: 4.7rem;
+        /* font-family: 'League Spartan', sans-serif; */
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all ease .5s;
+    }
+
+    .chromeLink a,
+    .foxLink a {
+        color: white;
+        padding: 1.4rem 2.1rem;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1.5rem;
+        transition: all ease .5s;
+
+    }
+
+    .foxLink {
+        background-color: #f1eff5;
+        margin-left: 1rem;
+        box-shadow: 0rem .6rem 1rem rgb(216, 216, 216);
+    }
+
+    .foxLink a {
+        color: black;
+        text-align: center;
+
+    }
+
+    .chromeLink:hover {
+
+        text-align: center;
+        border: 2px solid #5368df;
+        background-color: #fff;
+        color: black;
+    }
+
+    .chromeLink a:hover {
+        color: black;
+    }
+
+
+    /* HERO PAGE STYLE ENDS*/
+
+
+    /* FEATURES PAGE STYLE */
+
+    .page2 {
+        margin-bottom: 7rem;
+    }
+
+    .feaHeading {
+        text-align: center;
+    }
+
+    .feaHeading h1 {
+        font-size: 3rem;
+        margin: 2rem 0;
+        font-weight: 500;
+    }
+
+    .feaHeading p {
+        margin: 2rem 0;
+    }
+
+
+
+
+    /* SCROLLER STYLE  */
+
+    .scrollBtns p {
+        color: black;
+        padding: 1.5rem;
+    }
+
+    .scrollBtns {
+        width: 23rem;
+        margin: 5rem auto;
+        border-bottom: 1px solid #9194a1;
+
+    }
+
+    .scroller {
+        width: 20rem;
+        height: .3rem;
+        background-color: hsl(0, 94%, 66%);
+        margin: auto;
+        transition: all ease .5s;
+        transform: translateY(-11rem);
+    }
+
+
+    .move2 .scroller {
+        transition: all ease .5s;
+        transform: translateY(-5.5rem);
+    }
+
+    .move3 .scroller {
+        transition: all ease .5s;
+        transform: translateY(-.4rem);
+    }
+
+
+    /* SCROLLER STYLE ENDS */
+
+
+
+
+
+    /* BOX SHOW STYLE  */
+
+    .photo img {
+        /* transform: translateX(-3.6rem); */
+        display: block;
+        width: 100%;
+        margin-bottom: 7rem;
+    }
+
+    .box h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+        margin: auto;
+        line-height: 4.4rem;
+        color: #252b46;
+    }
+
+    .box p {
+        margin: 2.5rem 0;
+    }
+
+    .empty {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info {
+        /* background-color: hsl(231, 69%, 60%); */
+        background-color: #5368df;
+        height: 4.7rem;
+        /* font-family: 'League Spartan', sans-serif; */
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all ease .5s;
+        color: white;
+        width: 10rem;
+    }
+
+    .box {
+        transition: all ease .5s;
+    }
+
+    .box2,
+    .box3 {
+        display: none;
+    }
+
+    .show2 .box2 {
+        display: block;
+    }
+
+    .show2 .box1 {
+        display: none;
+    }
+
+    .show3 .box1 {
+        display: none;
+    }
+
+    .show3 .box3 {
+        display: block;
+    }
+
+
+
+
+
+    /* BOX SHOW STYLE ENDS */
+
+
+
+    .capsule2 img {
+        position: absolute;
+        /* top:15rem; */
+        left: 0;
+        top: 127rem;
+        z-index: -1;
+        display: block;
+        width: 100%;
+    }
+
+    .capsule img {
+        position: absolute;
+        /* top:15rem; */
+        right: 0;
+        top: 14rem;
+        z-index: -1;
+        display: block;
+        width: 100%;
+    }
+
+
+    /* FEATURES PAGE STYLE ENDS*/
+
+
+
+
+
+    /* EXTENSIONS CONTAINER STYLE */
+
+    .downTitle {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    .downTitle h1 {
+        font-size: 3rem;
+        margin: 2rem 0;
+        font-weight: 500;
+
+    }
+
+
+
+    .browser {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0rem .2rem 1.2rem rgb(229, 239, 255);
+        border-radius: 1rem;
+        width: fit-content;
+        margin-right: 0;
+        padding: 2.5rem 0;
+    }
+
+    .chromeCard {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+
+    }
+
+    .clogo img {
+        margin-bottom: 2rem;
+    }
+
+    .clogo h1 {
+        margin-bottom: 1.5rem;
+
+    }
+
+    .clogo p {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+
+    .btn {
+        margin-top: 2rem;
+    }
+
+
+    /* EXTENSIONS STYLE CLOSED */
+
+    /* .faqTitle{
+       margin: auto;
+    }
+     */
+
+
+
+    /* FAQ CONTAINER  */
+
+
+
+    .faqTitle h1 {
+        font-size: 3rem;
+        width: 33rem;
+        margin: 2rem auto;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+
+    .drawerContainer {
+        margin-top: 5rem;
+        border-top: #9194a1 .1rem solid;
+    }
+
+    .drawer {
+        border-bottom: #9194a1 .1rem solid;
+    }
+
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .questions p,
+    .answer p {
+        text-align: left;
+        padding: 2rem 0;
+    }
+
+    .questions p {
+        color: black;
+    }
+
+    .answer p {
+
+        padding-bottom: 2.5rem;
+    }
+
+    .fa-angle-down {
+        color: #5368df;
+    }
+
+    .okay {
+        margin-top: 5rem;
+    }
+
+    .answer {
+        height: 0;
+        overflow: hidden;
+        transition: all ease .5s;
+    }
+
+    /* FAQ CONTAINER CLOSED */
+
+
+
+
+
+
+    /*CONTACT CONTAINER*/
+
+
+
+    .contact {
+        background-color: #5368df;
+        color: white;
+        text-align: center;
+        padding: 3rem 0;
+        margin-top: 10rem;
+    }
+
+
+    .contact p,
+    span {
+        color: white;
+        font-size: 1.3rem;
+
+    }
+
+    .span {
+        margin-left: 1rem;
+        letter-spacing: .5rem;
+    }
+
+
+    .contact h1 {
+
+        font-size: 3.6rem;
+        font-weight: 500;
+        margin: 2rem 0 3rem 0;
+    }
+
+    h1 span {
+
+        display: block;
+        margin: auto;
+        font-size: 3.6rem;
+    }
+
+    .emailInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        width: 30rem;
+        margin: auto;
+    }
+
+    .emailInfo input,
+    .emailInfo button {
+        padding: 1.3rem 2rem;
+
+        border: none;
+        border-radius: .5rem;
+        font-size: 1.4rem;
+
+    }
+
+    .emailInfo button {
+        background-color: #fa5757;
+        color: white;
+
+    }
+
+    .emailInfo input:focus {
+        outline: 2px solid #fa5757;
+
+    }
+
+    /* CONTACT CONTAINER CLOSED*/
+
+
+
+    /* FOOTER CONTAINER */
+
+    .footer {
+        background-color: #252b46;
+    }
+
+    .flogo img {
+        width: 14.8rem;
+    }
+
+    .flinks,
+    .fcont ul,
+    .media {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .fcont ul {
+        gap: 5rem;
+    }
+
+    .fcont ul a,
+    .media {
+        color: white;
+    }
+
+    .media {
+        flex-direction: row;
+        font-size: 2.2rem;
+        gap: 3rem;
+    }
+
+    .fa-square-facebook,
+    .fa-twitter {
+        font-size: 3rem;
+    }
+
+    /* FOOTER CONTAINER CLOSED*/
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+
+    /* HEADER & NAV */
+    html,
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 4.5rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .nc {
+        display: none;
+    }
+
+    .fa-bars {
+        display: none;
+
+    }
+
+    .linksContainer {
+
+        text-align: center;
+        transition: all ease .5s;
+    }
+
+    .links {
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* .links li{
+      padding:1rem;
+    } */
+
+    .linksContainer a {
+        font-size: 1.6rem;
+
+    }
+
+
+
+    .menubtn {
+
+        background-color: #fa5757;
+        font-weight: 600;
+        color: white;
+        border-radius: .5rem;
+        align-items: center;
+
+        transition: all ease .2s;
+        border: .2rem solid #fa5757;
+        cursor: pointer;
+    }
+
+    .menubtn:hover {
+        background-color: #fff;
+        color: #fa5757;
+        border: .2rem solid #fa5757;
+    }
+
+    #last {
+        display: block;
+        color: white;
+        padding: 1.4rem 3rem 1rem 3rem;
+    }
+
+    #last:hover {
+        color: #fa5757;
+    }
+
+
+    /* #last:hover {
+       background-color: #fff;
+       color:#fa5757;
+       border: .2rem solid #fa5757;
+    } */
+
+
+
+    /* HEADER & NAV CLOSING*/
+
+
+    /* JS EDITING */
+
+    .show .linksContainer {
+        top: 0;
+        opacity: 1;
+        display: block;
+        transition: all ease .5s;
+    }
+
+    .show .fa-bars {
+        opacity: 0;
+    }
+
+
+
+    /* HERO PAGE STYLE */
+
+    .hero {
+        margin-top: 7rem;
+    }
+
+    .content {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .content2 {
+        display: none;
+    }
+
+    .simpleHeading h1 {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 4.4rem;
+        color: #252b46;
+
+    }
+
+    .simpleHeading {
+        width: 70%;
+    }
+
+    p {
+        font-size: 1.84rem;
+        line-height: 2.3rem;
+        text-align: center;
+        color: #9194a1;
+
+    }
+
+    .simpleHeading p {
+        font-size: 2.2rem;
+        line-height: 2.3rem;
+        text-align: left;
+        color: #9194a1;
+        margin: 5rem auto;
+    }
+
+
+
+    .tab {
+        transform: translateX(-3rem);
+        width: 115%;
+        display: block;
+
+    }
+
+
+    .btn {
+        margin: auto;
+    }
+
+    .chromeLink,
+    .foxLink {
+        /* background-color: hsl(231, 69%, 60%); */
+        background-color: #5368df;
+        /* font-family: 'League Spartan', sans-serif; */
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all ease .2s;
+    }
+
+    .chromeLink a,
+    .foxLink a {
+        display: block;
+        color: white;
+        padding: 2rem 3rem;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1.5rem;
+        transition: all ease .2s;
+
+    }
+
+    .foxLink {
+        border: .2rem solid #f1eff5;
+        background-color: #f1eff5;
+        margin-left: 1rem;
+        box-shadow: 0rem .6rem 1rem rgb(216, 216, 216);
+    }
+    
+    .foxLink:hover{
+             border: .2rem solid #1a1a1a;
+            background-color: #fff;
+            color: #1a1a1a;
+       
+    }
+
+    .foxLink a {
+        color: black;
+        text-align: center;
+
+    }
+
+    .chromeLink{
+        border: 2px solid #5368df;
+    }
+    
+    .chromeLink:hover {
+
+        text-align: center;
+        border: 2px solid #5368df;
+        background-color: #fff;
+        color: #5368df;
+    }
+
+    .chromeLink a:hover {
+        color: #5368df;
+    }
+
+    .capsule img {
+        position: absolute;
+        /* top:15rem; */
+        right: 0;
+        top: 12rem;
+        z-index: -1;
+        display: block;
+        width: 72%;
+    }
+
+    /* HERO PAGE STYLE ENDS*/
+
+
+    /* FEATURES PAGE STYLE */
+
+    .page2 {
+        margin: 8rem 0;
+    }
+
+    .feaHeading {
+        text-align: center;
+    }
+
+    .feaHeading h1 {
+        margin: 2rem 0;
+        font-size: 5rem;
+        font-weight: 600;
+        color: #252b46;
+    }
+
+    .feaHeading p {
+        margin: auto;
+        width: 50rem;
+        margin-bottom: 5rem;
+        font-size: 2.2rem;
+        line-height: 2.3rem;
+    }
+
+
+
+
+    /* SCROLLER STYLE  */
+
+    .scrollBtns p {
+
+        color: black;
+        padding: 1.5rem;
+    }
+
+    .scrollBtns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #9194a1;
+        margin: 0 15rem;
+    }
+
+    .scroller {
+        width: 15rem;
+        height: .3rem;
+        background-color: hsl(0, 94%, 66%);
+        margin: auto;
+        transition: all ease .5s;
+        transform: translate(-15rem, -.4rem);
+
+    }
+
+    .ko{
+        cursor: pointer;
+    }
+
+
+    .move2 .scroller {
+        transition: all ease .5s;
+        transform: translate(2.5rem, -.4rem);
+    }
+
+    .move3 .scroller {
+        transition: all ease .5s;
+        transform: translate(18rem, -.4rem);
+    }
+
+
+    /* SCROLLER STYLE ENDS */
+
+
+
+
+
+    /* BOX SHOW STYLE  */
+
+    .imgInfo {
+        margin-top: 7rem;
+    }
+
+    .photo img {
+        /* transform: translateX(-3.6rem); */
+        width: 50rem;
+        display: block;
+        margin: 0;
+    }
+
+    .box{
+        width: fit-content;
+        display: flex;
+        gap: 5rem;
+    }
+
+    .box h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 4.4rem;
+        color: #252b46;
+    }
+
+    .box p {
+        margin: 2.5rem 0;
+    }
+
+    .empty {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info {
+        /* background-color: hsl(231, 69%, 60%); */
+        background-color: #5368df;
+        height: 4.7rem;
+        /* font-family: 'League Spartan', sans-serif; */
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all ease .2s;
+        color: white;
+        width: 10rem;
+        border: 2px solid #5368df;
+
+    } 
+    
+    
+    
+    .info:hover {
+
+        background-color: #fff;
+        color: black;
+    }
+
+    .imgText hi,
+    .imgText p {
+        text-align: left;
+    }
+
+    .imgText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        transition: all ease .5s;
+    }
+
+    .box2,
+    .box3 {
+        display: none;
+    }
+
+    .show2 .box2 {
+        display:flex;
+    }
+
+    .show2 .box1 {
+        display: none;
+    }
+
+    
+
+    .show3 .box1 {
+        display: none;
+    }
+
+    .show3 .box3 {
+        display:flex;
+    }
+
+
+
+
+
+    /* BOX SHOW STYLE ENDS */
+
+
+
+    .capsule2 img {
+        position: absolute;
+        /* top:15rem; */
+        left: 0;
+        top: 100rem;
+        z-index: -1;
+        width: 72%;
+
+
+        
+
+
+    }
+
+
+
+
+    /* FEATURES PAGE STYLE ENDS*/
+
+
+
+
+
+    /* EXTENSIONS CONTAINER STYLE */
+
+    .downTitle {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    .downTitle h1 {
+        font-size: 4rem;
+        margin: 2rem 0;
+        font-weight: 500;
+
+    }
+
+    .downTitle p {
+        font-size: 2.2rem;
+        line-height: 2.3rem;
+        width: 60rem;
+        margin: auto;
+        color: #9194a1;
+
+    }
+
+
+
+    .browser {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0rem .2rem 1.2rem rgb(229, 239, 255);
+        border-radius: 1rem;
+        width: fit-content;
+        margin-right: 0;
+        padding: 2.5rem 0;
+    }
+
+    .chromeCard {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .clogo img {
+        margin-bottom: 2rem;
+    }
+
+    .clogo h1 {
+        margin-bottom: 1.5rem;
+
+    }
+
+    .clogo p {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+
+    .btn {
+        margin-top: 2rem;
+    }
+
+
+    /* EXTENSIONS STYLE CLOSED */
+
+    /* .faqTitle{
+       margin: auto;
+    }
+     */
+
+
+
+    /* FAQ CONTAINER  */
+
+
+
+    .faqTitle h1 {
+        font-size: 4rem;
+        width: 33rem;
+        margin: 2rem auto;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .faqTitle p{
+        font-size: 2.2rem;
+        line-height: 2.3rem;
+        width: 60rem;
+        margin: auto;
+        color: #9194a1;
+
+    }
+
+
+
+    .drawerContainer {
+        width:52rem;
+        margin: auto;
+        margin-top: 5rem;
+        border-top: #9194a1 .1rem solid;
+    }
+
+    .drawer {
+        border-bottom: #9194a1 .1rem solid;
+    }
+
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .questions p,
+    .answer p {
+        text-align: left;
+        padding: 2rem 0;
+    }
+
+    .questions p {
+        color: black;
+    }
+
+    .answer p {
+
+        padding-bottom: 2.5rem;
+    }
+
+    .fa-angle-down {
+        color: #5368df;
+    }
+
+    .okay {
+        margin-top: 5rem;
+    }
+
+    .answer {
+        height: 0;
+        overflow: hidden;
+        transition: all ease .5s;
+    }
+    
+    .grow .answer {
+        height:11rem;
+    }
+
+    /* FAQ CONTAINER CLOSED */
+
+
+
+
+
+
+    /*CONTACT CONTAINER*/
+
+
+
+    .contact {
+        background-color: #5368df;
+        color: white;
+        text-align: center;
+        padding: 3rem 0;
+        margin-top: 10rem;
+    }
+
+
+    .contact p,
+    span {
+        color: white;
+        font-size: 1.3rem;
+
+    }
+
+    .span {
+        margin-left: 1rem;
+        letter-spacing: .5rem;
+    }
+
+
+    .contact h1 {
+
+        font-size: 3.6rem;
+        font-weight: 500;
+        margin: 2rem 0 3rem 0;
+    }
+
+    h1 span {
+
+        display: block;
+        margin: auto;
+        font-size: 3.6rem;
+    }
+
+    .emailInfo {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: auto;
+    }
+
+    
+    .emailInfo input,
+    .emailInfo button {
+        padding: 2rem 2.5rem;
+
+        border: none;
+        border-radius: .5rem;
+        font-size: 1.4rem;
+
+    }
+.emailInfo input{
+        width: 30rem;
+    }
+
+    .emailInfo button {
+        background-color: #fa5757;
+        color: white;
+        border: .2rem solid #fa5757;
+        transition: all ease .2s;
+        cursor: pointer;
+    }
+    
+    .emailInfo button:hover{
+        background-color: white;
+        color: #fa5757;
+
+    }
+
+    .emailInfo input:focus {
+        outline: 2px solid #fa5757;
+
+    }
+
+    /* CONTACT CONTAINER CLOSED*/
+
+
+
+    /* FOOTER CONTAINER */
+
+    .footer {
+        background-color: #252b46;
+    }
+
+    .flogo img {
+        width: 14.8rem;
+    }
+
+    .flinks,
+    .fcont ul,
+    .media {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .fcont ul {
+        gap: 5rem;
+    }
+
+    .fcont ul a,
+    .media {
+        color: white;
+    }
+
+    .media {
+        flex-direction: row;
+        font-size: 2.2rem;
+        gap: 3rem;
+    }
+
+    .fa-square-facebook,
+    .fa-twitter {
+        font-size: 3rem;
+    }
+
+    /* FOOTER CONTAINER CLOSED*/
+
+
+
+
+}
+
+
+/* @media screen and (min-width:768px){
+    
+}
+ */
+
+
+
+@media screen and (min-width:992px) {
+
+
+    .tab {
+        transform: translateX(-7rem);
+        width: 130%;
+        display: block;
+
+    }
+
+    .b2{
+        margin-top: 7rem;
+    }
+    
+    .b3{
+        margin-top: 14rem;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .container{
+        width:120rem;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: flex;
+        gap: 6rem;
+    }
+
+    .simpleHeading{
+        width:60rem;
+    }
+
+    .tab {
+        
+        width: 150%;
+        display: block;
+
+    }
+
+    .photo img {
+        /* transform: translateX(-3.6rem); */
+        width: 70rem;
+        display: block;
+        margin: 0;
+    }
+
+    .capsule img {
+        position: absolute;
+        /* top:15rem; */
+        right: 0;
+        top: 12rem;
+        z-index: -1;
+        display: block;
+        width:100rem;
+    }
+
+    .capsule2 img {
+        position: absolute;
+        /* top:15rem; */
+        left: 0;
+        top: 120rem;
+        z-index: -1;
+        width: 100rem;
+
+
+        
+
+
+    }
+
+}
